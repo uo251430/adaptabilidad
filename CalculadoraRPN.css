@@ -1,0 +1,39 @@
+/*Especificidad: 001*/
+main{
+    width: 100%;
+    max-width: 50em;
+    text-align: center;
+    padding-bottom: 3em;
+    margin: auto;
+    background: #b07a45;
+}
+
+  /*Especificidad: 001*/
+  label{
+    display: none;
+  }
+
+/*Especificidad: 011*/
+  input[type=text] {
+      width: 75%;
+      padding: 1em 1em;
+      font-size: 1em;
+      border: 0.4em solid silver;
+      text-align: right;
+      color: #333;
+      background: #A8C989;
+  }
+ 
+ /*Especificidad: 011*/
+ input[type=button],input[type=submit]{
+  background-color:blanchedalmond;
+  border-radius:1em;
+  color:black;
+    padding: 1em 1em;
+    font-size: 1em;
+    min-width: 15%;
+}
+ /*Especificidad: 021*/
+  input[type=button]:hover {
+    background-color: #333;
+  }

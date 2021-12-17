@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nicolás Fernández" />
+    <meta name="description" content="Simulación de una calculadora RPN" />
+    <title>Calculadora RPN</title>
+
+    <link rel="stylesheet" href="CalculadoraRPN.css" />
+    <script src="CalculadoraRPN.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <h1>Ejercicio 5</h1>
+        <form>
+            <p>
+                <label for="registro">registro</label>
+                <input type="text" id="registro" disabled="" title="registro" />
+            </p>
+            <p>
+                <label for="pantalla">pantalla</label>
+                <input type="text" id="pantalla" disabled="" title="pantalla" />
+            </p>
+            
+            <p>
+                <input type="button" value="aSin" onClick="calculadora.aSin()" />
+                <input type="button" value="aCos" onClick="calculadora.aCos()" />
+                <input type="button" value="aTan" onClick="calculadora.aTan()" />
+                <input type="button" value="^" onClick="calculadora.elevado()" />
+                
+            </p>
+            <p>
+                <input type="button" value="sin" onClick="calculadora.sin()" />
+                <input type="button" value="cos" onClick="calculadora.cos()" />
+                <input type="button" value="tan" onClick="calculadora.tan()" />
+                <input type="button" value="/" onClick="calculadora.division()" />
+            </p>
+
+            <p>
+                <input type="button" value="7" onClick="calculadora.escribe(7)" />
+                <input type="button" value="8" onClick="calculadora.escribe(8)" />
+                <input type="button" value="9" onClick="calculadora.escribe(9)" />
+                <input type="button" value="+" onClick="calculadora.mas()" />
+            </p>
+
+
+            <p>
+                <input type="button" value="4" onClick="calculadora.escribe(4)" />
+                <input type="button" value="5" onClick="calculadora.escribe(5)" />
+                <input type="button" value="6" onClick="calculadora.escribe(6)" />
+                <input type="button" value="*" onClick="calculadora.multiplicacion()" />
+            </p>
+
+            <p>
+                <input type="button" value="1" onClick="calculadora.escribe(1)" />
+                <input type="button" value="2" onClick="calculadora.escribe(2)" />
+                <input type="button" value="3" onClick="calculadora.escribe(3)" />
+                <input type="button" value="-" onClick="calculadora.menos()" />
+               
+            </p>
+
+            <p>
+                <input type="button" value="0" onClick="calculadora.escribe(0)" />
+                <input type="button" value="." onClick="calculadora.escribe('.')" />
+                <input type="button" value="ENTER" onClick="calculadora.enter()" />
+                <input type="submit" value="C" onClick="calculadora.borrar()" />
+                
+            </p>
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>
